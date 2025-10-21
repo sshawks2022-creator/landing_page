@@ -16,9 +16,9 @@ const Hero = () => {
         <img 
           src={heroSecurityTeam} 
           alt="Elite security and military personnel team" 
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/70 to-primary/50" />
       </div>
 
       <div className="container mx-auto px-4 py-32 relative z-10">
