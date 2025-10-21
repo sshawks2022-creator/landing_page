@@ -1,43 +1,58 @@
-import { Shield, Factory, Camera, Flame, Users, Building } from "lucide-react";
+import { Shield, Factory, Clock, Calendar, FileText, UserCheck, Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import mannedGuarding from "@/assets/service-manned-guarding.jpg";
-import corporateSecurity from "@/assets/service-corporate-security.jpg";
-import surveillance from "@/assets/service-surveillance.jpg";
-import fireSafety from "@/assets/service-fire-safety.jpg";
+import securityGuards from "@/assets/service-security-guards.jpg";
+import industrialCorporate from "@/assets/service-industrial-corporate.jpg";
+import monitoring247 from "@/assets/service-monitoring-247.jpg";
+import eventSecurity from "@/assets/service-event-security.jpg";
+import customizedPlans from "@/assets/service-customized-plans.jpg";
 import vipProtection from "@/assets/service-vip-protection.jpg";
-import facilityManagement from "@/assets/service-facility-management.jpg";
+import facilityCompliance from "@/assets/service-facility-compliance.jpg";
+
 const Services = () => {
-  const services = [{
-    icon: Shield,
-    title: "Manned Guarding",
-    description: "Trained guards providing 24/7 protection for industrial, corporate, and residential areas.",
-    image: mannedGuarding
-  }, {
-    icon: Factory,
-    title: "Corporate & Industrial Security",
-    description: "End-to-end security for offices, factories, and logistics hubs.",
-    image: corporateSecurity
-  }, {
-    icon: Camera,
-    title: "Electronic Surveillance",
-    description: "AI-powered CCTV and biometric systems for real-time threat monitoring.",
-    image: surveillance
-  }, {
-    icon: Flame,
-    title: "Fire & Disaster Management",
-    description: "Emergency readiness through drills, response teams, and fire-safety systems.",
-    image: fireSafety
-  }, {
-    icon: Users,
-    title: "VIP & Executive Protection",
-    description: "Elite security teams ensuring safety for executives and dignitaries.",
-    image: vipProtection
-  }, {
-    icon: Building,
-    title: "Facility & Housekeeping",
-    description: "Clean, safe, and well-maintained environments through professional facility management.",
-    image: facilityManagement
-  }];
+  const services = [
+    {
+      icon: Shield,
+      title: "Professional Security Guards",
+      description: "Highly trained and certified security personnel providing round-the-clock protection for your premises with professional vigilance and disciplined conduct.",
+      image: securityGuards
+    },
+    {
+      icon: Factory,
+      title: "Industrial & Corporate Security Solutions",
+      description: "Comprehensive security infrastructure for industrial facilities and corporate offices, ensuring complete protection of assets, personnel, and operations.",
+      image: industrialCorporate
+    },
+    {
+      icon: Clock,
+      title: "24/7 Monitoring & On-site Support",
+      description: "Continuous surveillance and immediate response capabilities with dedicated monitoring centers and on-ground security teams working around the clock.",
+      image: monitoring247
+    },
+    {
+      icon: Calendar,
+      title: "Event Security Management",
+      description: "Expert crowd control and security coordination for events of all sizes, ensuring safe and smooth execution with professional event security protocols.",
+      image: eventSecurity
+    },
+    {
+      icon: FileText,
+      title: "Customized Security Plans",
+      description: "Tailored security strategies designed specifically for your unique requirements, combining risk assessment with practical implementation roadmaps.",
+      image: customizedPlans
+    },
+    {
+      icon: UserCheck,
+      title: "VIP & Executive Protection",
+      description: "Elite close protection services for high-profile individuals and executives, delivered by specially trained security professionals with military precision.",
+      image: vipProtection
+    },
+    {
+      icon: Building2,
+      title: "Facility & Compliance Support",
+      description: "Complete facility management services ensuring regulatory compliance, safety standards, and maintaining secure, well-managed operational environments.",
+      image: facilityCompliance
+    }
+  ];
   return <section id="services" className="bg-primary text-primary-foreground py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
