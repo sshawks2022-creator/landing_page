@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import securityTeam from "@/assets/security-team.jpg";
+import heroSecurityTeam from "@/assets/hero-security-team-elite.jpg";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -14,8 +14,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src={securityTeam} 
-          alt="Professional security team" 
+          src={heroSecurityTeam} 
+          alt="Elite security and military personnel team" 
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/70" />
