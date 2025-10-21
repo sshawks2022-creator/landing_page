@@ -76,7 +76,7 @@ const NotFound = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-semibold min-w-[200px]"
+                  className="border-primary-foreground/30 text-muted-foreground hover:text-primary-foreground hover:bg-primary-foreground/10 font-semibold min-w-[200px] transition-colors duration-300"
                 >
                   <Search className="mr-2 h-5 w-5" />
                   Contact Support
