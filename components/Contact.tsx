@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Emergency CTA moved to homepage */}
+              {/* Removed emergency copy as requested */}
             </div>
 
             <div className="animate-slide-in-right">
@@ -170,6 +170,24 @@ const Contact = () => {
                   Send Message
                 </Button>
               </form>
+            </div>
+          </div>
+
+          {/* Centered Online Meet CTA */}
+          <div className="mt-12 flex justify-center">
+            <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center max-w-xl w-full">
+              <p className="font-body text-primary-foreground/90 mb-4">
+                Connect with us over an online meet and let's see what services we can offer to protect you.
+              </p>
+              <a
+                href="https://calendly.com/sshawks2022/60min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-body font-semibold">
+                  Start an Online Meet
+                </Button>
+              </a>
             </div>
           </div>
         </div>
