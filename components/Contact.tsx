@@ -21,7 +21,10 @@ const Contact = () => {
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify({
           access_key: "7acfacb5-1298-4de6-ae0d-4cf49ce05805",
           subject: "New Inquiry from SS Security Agency Website",
@@ -35,13 +38,22 @@ const Contact = () => {
 
       const result = await response.json();
       if (result.success) {
-        toast({ title: "Message Sent!", description: "We'll get back to you within 24 hours." });
+        toast({
+          title: "Message Sent!",
+          description: "We'll get back to you within 24 hours.",
+        });
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
-        toast({ title: "Submission failed", description: "Please try again in a moment." });
+        toast({
+          title: "Submission failed",
+          description: "Please try again in a moment.",
+        });
       }
     } catch (error) {
-      toast({ title: "Network error", description: "Please check your connection and retry." });
+      toast({
+        title: "Network error",
+        description: "Please check your connection and retry.",
+      });
     }
   };
 
@@ -200,17 +212,17 @@ const Contact = () => {
                 <div
                   className="absolute inset-0"
                   style={{
-                    backgroundImage:
-                      `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px)`,
+                    backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px)`,
                   }}
                 />
               </div>
               <div className="relative z-10 space-y-6">
                 <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground">
-                  Let's talk security
+                  Let's talk
                 </h3>
-                <p className="text-lg md:text-xl text-primary-foreground/90 font-body">
-                  Connect with us over an online meet and let's see what services we can offer to protect you.
+                <p className="text-lg md:text-xl text-primary-foreground/90 font-body mb-6">
+                  Connect with us over an online meet and let's see what
+                  services we can offer to protect you.
                 </p>
                 <a
                   href="https://calendly.com/sshawks2022/60min"
