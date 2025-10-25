@@ -94,14 +94,19 @@ const Hero = () => {
             >
               Our Services
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-primary-foreground text-black hover:bg-gray-500 hover:text-white font-body font-semibold text-lg px-8 py-6"
-              onClick={() => router.push("/contact")}
+            <a
+              href="https://calendly.com/sshawks2022/60min"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Book a Call
-            </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-primary-foreground text-black hover:bg-gray-500 hover:text-white font-body font-semibold text-lg px-8 py-6"
+              >
+                Book a Call
+              </Button>
+            </a>
           </div>
 
           <div className="pt-12 flex flex-wrap justify-center gap-8 text-sm font-body">

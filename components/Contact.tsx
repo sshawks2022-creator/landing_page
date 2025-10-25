@@ -16,13 +16,33 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: "7acfacb5-1298-4de6-ae0d-4cf49ce05805",
+          subject: "New Inquiry from SS Security Agency Website",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          from_name: "SS Security Agency Website",
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        toast({ title: "Message Sent!", description: "We'll get back to you within 24 hours." });
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        toast({ title: "Submission failed", description: "Please try again in a moment." });
+      }
+    } catch (error) {
+      toast({ title: "Network error", description: "Please check your connection and retry." });
+    }
   };
 
   return (
@@ -173,21 +193,38 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Centered Online Meet CTA */}
+          {/* Centered Online Meet CTA - styled similar to homepage CTA */}
           <div className="mt-12 flex justify-center">
-            <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center max-w-xl w-full">
-              <p className="font-body text-primary-foreground/90 mb-4">
-                Connect with us over an online meet and let's see what services we can offer to protect you.
-              </p>
-              <a
-                href="https://calendly.com/sshawks2022/60min"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-body font-semibold">
-                  Start an Online Meet
-                </Button>
-              </a>
+            <div className="relative bg-gradient-to-br from-primary/95 to-primary border-2 border-accent/30 rounded-3xl p-12 md:p-20 text-center space-y-8 animate-fade-in-up shadow-2xl max-w-3xl w-full">
+              <div className="absolute inset-0 opacity-5 rounded-3xl">
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    backgroundImage:
+                      `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px)`,
+                  }}
+                />
+              </div>
+              <div className="relative z-10 space-y-6">
+                <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground">
+                  Let's talk security
+                </h3>
+                <p className="text-lg md:text-xl text-primary-foreground/90 font-body">
+                  Connect with us over an online meet and let's see what services we can offer to protect you.
+                </p>
+                <a
+                  href="https://calendly.com/sshawks2022/60min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    size="lg"
+                    className="bg-accent hover:bg-accent/90 text-accent-foreground font-body font-semibold text-lg px-10 py-7 red-glow-hover"
+                  >
+                    Start an Online Meet
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
