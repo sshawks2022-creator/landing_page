@@ -15,9 +15,11 @@ const Contact = () => {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -54,6 +56,8 @@ const Contact = () => {
         title: "Network error",
         description: "Please check your connection and retry.",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -197,9 +201,10 @@ const Contact = () => {
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-body font-semibold text-lg py-6 red-glow-hover"
+                  disabled={isSubmitting}
+                  className="w-full bg-accent hover:bg-accent/90 disabled:opacity-60 disabled:cursor-not-allowed text-accent-foreground font-body font-semibold text-lg py-6 red-glow-hover"
                 >
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </div>
