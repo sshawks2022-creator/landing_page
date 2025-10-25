@@ -55,7 +55,7 @@ const Contact = () => {
                         Phone
                       </div>
                       <div className="text-muted-foreground font-body">
-                        +91 XXX XXX XXXX
+                        +91 7004708779
                       </div>
                     </div>
                   </div>
@@ -81,9 +81,21 @@ const Contact = () => {
                         Location
                       </div>
                       <div className="text-muted-foreground font-body">
-                        Karnataka, India
+                        Branch Office: B202, Nipuna Heritage, Virupakshapura, Bangalore, Karnataka, 560097
                       </div>
                     </div>
+                  </div>
+                  <div className="rounded-lg overflow-hidden border mt-4">
+                    <iframe
+                      title="Branch Office Location"
+                      src="https://www.google.com/maps?q=B202%2C%20Nipuna%20Heritage%2C%20Virupakshapura%2C%20Bangalore%2C%20Karnataka%2C%20560097&output=embed"
+                      width="100%"
+                      height="300"
+                      style={{ border: 0 }}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      allowFullScreen
+                    />
                   </div>
                 </div>
               </div>
@@ -96,6 +108,17 @@ const Contact = () => {
                   For immediate security concerns or emergencies, our response
                   team is available round the clock to assist you.
                 </p>
+                <div className="pt-4">
+                  <a
+                    href="https://calendly.com/sshawks2022/60min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-body font-semibold">
+                      Schedule a Quick Meet
+                    </Button>
+                  </a>
+                </div>
               </div>
             </div>
 
