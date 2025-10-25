@@ -42,6 +42,19 @@ const CTA = () => {
                   Contact us
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
+                <a
+                  href="https://calendly.com/sshawks2022/60min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    size="lg"
+                    variant="secondary"
+                    className="border-accent text-primary font-body font-semibold text-lg px-10 py-7 hover:bg-accent/10"
+                  >
+                    Book an Online Meet
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

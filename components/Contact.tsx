@@ -101,30 +101,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-primary text-primary-foreground p-6 rounded-lg">
-                <h4 className="font-heading font-bold text-xl mb-3">
-                  24/7 Emergency Response
-                </h4>
-                <p className="font-body text-primary-foreground/90">
-                  For immediate security concerns or emergencies, our response
-                  team is available round the clock to assist you.
-                </p>
-                <div className="pt-4 space-y-3">
-                  <p className="font-body text-primary-foreground/90">
-                    Connect with us over an online meet and let's see what
-                    services we can offer to protect you.
-                  </p>
-                  <a
-                    href="https://calendly.com/sshawks2022/60min"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-body font-semibold">
-                      Start an Online Meet
-                    </Button>
-                  </a>
-                </div>
-              </div>
+              {/* Emergency CTA moved to homepage */}
             </div>
 
             <div className="animate-slide-in-right">
