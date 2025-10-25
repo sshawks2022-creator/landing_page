@@ -137,9 +137,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        {/* Favicon - Logo SVG */}
+        {/* Favicons - use brand logo */}
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/logo.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
 
         {/* Preconnect to important third-party origins */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

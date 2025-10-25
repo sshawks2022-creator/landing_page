@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Building2 } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
 
@@ -30,14 +31,17 @@ const Clients = () => {
     {
       name: "DRDO",
       description: "Defence Research & Development Organisation",
+      imageSrc: "/client-handshake.jpg",
     },
     {
       name: "IOCL",
       description: "Indian Oil Corporation Limited",
+      imageSrc: "/security-team.jpg",
     },
     {
-      name: "Karnataka Govt",
-      description: "Government of Karnataka",
+      name: "Government of Karnataka",
+      description: "State Government of Karnataka",
+      imageSrc: "/monitoring-cctv.jpg",
     },
   ];
 
@@ -71,7 +75,20 @@ const Clients = () => {
                 className="bg-card p-8 rounded-lg border-2 border-border hover:border-accent transition-all duration-300 text-center group red-glow-hover animate-zoom-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <Building2 className="w-16 h-16 text-accent mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                {client.imageSrc ? (
+                  <div className="relative w-full h-40 mb-4 overflow-hidden rounded-md">
+                    <Image
+                      src={client.imageSrc}
+                      alt={`${client.name} visual`}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      priority={index === 0}
+                    />
+                  </div>
+                ) : (
+                  <Building2 className="w-16 h-16 text-accent mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                )}
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
                   {client.name}
                 </h3>

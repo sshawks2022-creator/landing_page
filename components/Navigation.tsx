@@ -95,7 +95,7 @@ const Navigation = () => {
             </button>
           ))}
           <a
-            href="https://calendly.com/sssecurityagency/book-a-call"
+            href="https://calendly.com/sshawks2022/60min"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -132,7 +132,7 @@ const Navigation = () => {
               </button>
             ))}
             <a
-              href="https://calendly.com/sssecurityagency/book-a-call"
+              href="https://calendly.com/sshawks2022/60min"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}

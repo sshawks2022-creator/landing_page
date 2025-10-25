@@ -40,6 +40,23 @@ const Footer = () => {
                   "Strength in Security, Trust in Service"
                 </p>
               </div>
+              <div className="pt-6">
+                <h4 className="font-heading font-bold text-lg mb-3">Certifications & Registrations</h4>
+                <ul className="text-primary-foreground/80 font-body text-sm space-y-1">
+                  <li>
+                    <span className="font-semibold">DGR, Ministry of Defence</span> (Regn No. DGR(O)/2079701082022)
+                  </li>
+                  <li>
+                    <span className="font-semibold">Government of Karnataka, Department of Labour</span> (Regn. No. 32/79/CE/0036/2022 dt 13/12/2022)
+                  </li>
+                  <li>
+                    <span className="font-semibold">GST</span>: 29ABIPM1357P1Z0
+                  </li>
+                  <li>
+                    <span className="font-semibold">PASARA</span>: Ser No. PSA/L/KA/2023/APR/3/553
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div className="space-y-6">
