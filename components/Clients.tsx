@@ -31,7 +31,7 @@ const Clients = () => {
     {
       name: "DRDO",
       description: "Defence Research & Development Organisation",
-      imageSrc: "/client-handshake.jpg",
+      imageSrc: "/drdo.jpg",
     },
     {
       name: "IOCL",
@@ -41,7 +41,7 @@ const Clients = () => {
     {
       name: "Government of Karnataka",
       description: "State Government of Karnataka",
-      imageSrc: "/monitoring-cctv.jpg",
+      imageSrc: "/kargov.jpg",
     },
   ];
 
