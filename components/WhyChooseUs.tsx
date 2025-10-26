@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-8">
             {/* Hero Leadership Image - Main Feature (Larger) */}
             <Card className="md:col-span-8 md:row-span-2 overflow-hidden border-none group animate-slide-in-left hover:shadow-[0_20px_60px_rgba(198,40,40,0.4)] transition-all duration-500">
-              <div className="relative h-full min-h-[600px]">
+              <div className="relative h-full min-h-[420px] md:min-h-[600px]">
                 <Image
                   src="/hero-security-leader.jpg"
                   alt="Military veteran security leader with over 31 years of field experience in strategic security operations"

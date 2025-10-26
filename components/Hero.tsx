@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center bg-primary text-primary-foreground overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-primary text-primary-foreground overflow-hidden will-change-transform"
     >
       {/* Background Image */}
       <div className="absolute inset-0">

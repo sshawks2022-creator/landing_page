@@ -36,7 +36,7 @@ const Clients = () => {
     {
       name: "IOCL",
       description: "Indian Oil Corporation Limited",
-      imageSrc: "/service-industrial-corporate.jpg",
+      imageSrc: "/iocl-illustration.svg",
     },
     {
       name: "Government of Karnataka",

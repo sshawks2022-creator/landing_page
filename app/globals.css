@@ -8,6 +8,21 @@ html.lenis body {
   height: auto;
 }
 
+/* Prevent mobile white edge caused by overscroll and transform layers */
+html,
+body {
+  overflow-x: hidden;
+  background-color: hsl(var(--background));
+}
+
+/* iOS rubber-band overscroll fix for main container */
+main,
+section,
+nav,
+footer {
+  overscroll-behavior: contain;
+}
+
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
@@ -132,7 +147,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-body overflow-x-hidden;
   }
 
   h1,
