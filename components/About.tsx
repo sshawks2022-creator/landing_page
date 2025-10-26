@@ -52,7 +52,7 @@ const About = () => {
                 <div className="relative bg-primary p-5 md:p-8 rounded-lg shadow-2xl overflow-hidden group-hover:shadow-[0_25px_60px_rgba(198,40,40,0.4)] transition-all duration-500">
                   <div className="mb-6 overflow-hidden rounded-lg group-hover:shadow-[0_15px_40px_rgba(198,40,40,0.3)] transition-all duration-500 relative h-64 md:h-96">
                     <Image
-                      src="/img1.png"
+                      src="/img1.webp"
                       alt="Col. Subhash Sinha (Veteran) - Founder and decorated Indian Army veteran with 31+ years of military service"
                       fill
                       className="object-cover grayscale md:group-hover:scale-110 md:group-hover:grayscale-0 transition-all duration-700"
