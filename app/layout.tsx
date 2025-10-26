@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     siteName: "SS Security Agency",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/hero-security-leader.jpg",
         width: 1200,
         height: 630,
         alt: "SS Security Agency - Professional Security Services",
@@ -107,7 +107,7 @@ export const metadata: Metadata = {
     title: "SS Security Agency | Military-Grade Security Services",
     description:
       "Professional security services with military precision. Led by Col. Subhash Sinha (Veteran) - 31+ years experience.",
-    images: ["/og-image.jpg"],
+    images: ["/hero-security-leader.jpg"],
   },
   alternates: {
     canonical: "/",
@@ -122,6 +122,7 @@ export const metadata: Metadata = {
     "mobile-web-app-capable": "yes",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
+    "theme-color": "#0A1E3D",
   },
 };
 
@@ -168,6 +169,9 @@ export default function RootLayout({
                     "@type": "ImageObject",
                     url: "https://sssecurityagency.com/logo.png",
                   },
+                  image:
+                    "https://sssecurityagency.com/hero-security-leader.jpg",
+                  sameAs: ["https://sssecurityagency.com"],
                   founder: {
                     "@type": "Person",
                     name: "Col. Subhash Sinha (Veteran)",
@@ -180,6 +184,26 @@ export default function RootLayout({
                     "@type": "QuantitativeValue",
                     value: "250+",
                   },
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "B202, Nipuna Heritage, Virupakshapura",
+                    addressLocality: "Bangalore",
+                    addressRegion: "Karnataka",
+                    postalCode: "560097",
+                    addressCountry: "IN",
+                  },
+                  contactPoint: [
+                    {
+                      "@type": "ContactPoint",
+                      contactType: "customer support",
+                      telephone: "+91-7004708779",
+                      email: "info@sssecurityagency.in",
+                      areaServed: "IN",
+                      availableLanguage: ["en"],
+                    },
+                  ],
+                  hasMap:
+                    "https://www.google.com/maps?q=B202%2C%20Nipuna%20Heritage%2C%20Virupakshapura%2C%20Bangalore%2C%20Karnataka%2C%20560097",
                   aggregateRating: {
                     "@type": "AggregateRating",
                     ratingValue: "4.9",

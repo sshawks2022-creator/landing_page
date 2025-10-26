@@ -17,6 +17,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  openGraph: {
+    title: "SS Security Agency | Military-Grade Security Services",
+    description:
+      "Professional security services with military precision. Led by Col. Subhash Sinha (Veteran) - 31+ years experience.",
+    url: "/",
+    images: [
+      {
+        url: "/hero-security-team-elite.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SS Security Agency - Military-grade services",
+      },
+    ],
+  },
 };
 
 export default function Home() {
