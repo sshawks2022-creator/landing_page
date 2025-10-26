@@ -32,7 +32,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://sssecurityagency.com"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://sssecurityagency.in"
   ),
   title: {
     default:
@@ -160,18 +160,18 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "SecurityCompany",
-                  "@id": "https://sssecurityagency.com/#organization",
+                  "@id": "https://sssecurityagency.in/#organization",
                   name: "SS Security Agency",
                   description:
                     "Professional security services with military precision led by Col. Subhash Sinha (Veteran)",
-                  url: "https://sssecurityagency.com",
+                  url: "https://sssecurityagency.in",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://sssecurityagency.com/logo.png",
+                    url: "https://sssecurityagency.in/logo.png",
                   },
                   image:
-                    "https://sssecurityagency.com/hero-security-leader.jpg",
-                  sameAs: ["https://sssecurityagency.com"],
+                    "https://sssecurityagency.in/hero-security-leader.jpg",
+                  sameAs: ["https://sssecurityagency.in"],
                   founder: {
                     "@type": "Person",
                     name: "Col. Subhash Sinha (Veteran)",
@@ -293,33 +293,33 @@ export default function RootLayout({
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://sssecurityagency.com/#website",
-                  url: "https://sssecurityagency.com",
+                  "@id": "https://sssecurityagency.in/#website",
+                  url: "https://sssecurityagency.in",
                   name: "SS Security Agency",
                   description: "Professional Security Services",
                   publisher: {
-                    "@id": "https://sssecurityagency.com/#organization",
+                    "@id": "https://sssecurityagency.in/#organization",
                   },
                   potentialAction: {
                     "@type": "SearchAction",
                     target: {
                       "@type": "EntryPoint",
                       urlTemplate:
-                        "https://sssecurityagency.com/search?q={search_term_string}",
+                        "https://sssecurityagency.in/search?q={search_term_string}",
                     },
                     "query-input": "required name=search_term_string",
                   },
                 },
                 {
                   "@type": "WebPage",
-                  "@id": "https://sssecurityagency.com/#webpage",
-                  url: "https://sssecurityagency.com",
+                  "@id": "https://sssecurityagency.in/#webpage",
+                  url: "https://sssecurityagency.in",
                   name: "SS Security Agency | Military-Grade Security Services",
                   isPartOf: {
-                    "@id": "https://sssecurityagency.com/#website",
+                    "@id": "https://sssecurityagency.in/#website",
                   },
                   about: {
-                    "@id": "https://sssecurityagency.com/#organization",
+                    "@id": "https://sssecurityagency.in/#organization",
                   },
                   description:
                     "Professional security services with military precision. Trusted by top organizations nationwide.",
