@@ -204,11 +204,6 @@ export default function RootLayout({
                   ],
                   hasMap:
                     "https://www.google.com/maps?q=B202%2C%20Nipuna%20Heritage%2C%20Virupakshapura%2C%20Bangalore%2C%20Karnataka%2C%20560097",
-                  aggregateRating: {
-                    "@type": "AggregateRating",
-                    ratingValue: "4.9",
-                    reviewCount: "40",
-                  },
                   areaServed: {
                     "@type": "Country",
                     name: "India",
