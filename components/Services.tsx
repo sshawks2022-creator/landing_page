@@ -36,11 +36,25 @@ const Services = () => {
       image: "/service-monitoring-247.jpg",
     },
     {
+      icon: FileText,
+      title: "Electronic Security Systems",
+      description:
+        "Integrated electronic surveillance including CCTV, access control, intrusion alarms, and remote monitoring backed by rapid response.",
+      image: "/service-surveillance.jpg",
+    },
+    {
       icon: Calendar,
       title: "Event Security Management",
       description:
         "Expert crowd control and security coordination for events of all sizes, ensuring safe and smooth execution with professional event security protocols.",
       image: "/service-event-security.jpg",
+    },
+    {
+      icon: FileText,
+      title: "Fire Safety & Disaster Management",
+      description:
+        "End-to-end fire safety audits, evacuation planning, mock drills, and disaster response coordination aligned with industry standards.",
+      image: "/service-fire-safety.jpg",
     },
     {
       icon: FileText,
@@ -58,10 +72,17 @@ const Services = () => {
     },
     {
       icon: Building2,
-      title: "Facility & Compliance Support",
+      title: "Facility Management",
       description:
-        "Complete facility management services ensuring regulatory compliance, safety standards, and maintaining secure, well-managed operational environments.",
-      image: "/service-facility-compliance.jpg",
+        "Operations support, housekeeping oversight, and on-ground coordination to maintain safe, efficient, and secure facilities.",
+      image: "/service-facility-management.jpg",
+    },
+    {
+      icon: FileText,
+      title: "Compliance Documentation",
+      description:
+        "Government regulations compliance, statutory documentation, and audit readiness with proper record-keeping and verifications.",
+      image: "/compliance-trust.jpg",
     },
   ];
 
@@ -115,5 +136,3 @@ const Services = () => {
 };
 
 export default Services;
-
-

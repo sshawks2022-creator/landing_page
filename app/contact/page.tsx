@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Contact Us | Request Security Services",
   description:
-    "Contact SS Security Agency for professional security services. Available 24/7 for emergency response and security consultations. Led by Col. Subhash Sinha (Retd.).",
+    "Contact SS Security Agency for professional security services. Available 24/7 for emergency response and security consultations. Led by Col. Subhash Sinha (Veteran).",
   alternates: {
     canonical: "/contact",
   },
@@ -29,5 +29,3 @@ export default function ContactPage() {
     </div>
   );
 }
-
-

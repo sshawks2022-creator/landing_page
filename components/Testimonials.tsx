@@ -107,7 +107,7 @@ const Testimonials = () => {
             </Carousel>
           </div>
 
-          {/* Brand Logos Carousel */}
+          {/* Brand Logos Carousel
           <div className="mt-16 overflow-hidden">
             <style jsx>{`
               @keyframes infinite-scroll {
@@ -138,7 +138,7 @@ const Testimonials = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

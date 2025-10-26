@@ -36,11 +36,11 @@ export const metadata: Metadata = {
   ),
   title: {
     default:
-      "SS Security Agency | Military-Grade Security Services by Col. Subhash Sinha (Retd.)",
+      "SS Security Agency | Military-Grade Security Services by Col. Subhash Sinha (Veteran)",
     template: "%s | SS Security Agency",
   },
   description:
-    "Professional security services with military precision. Led by Col. Subhash Sinha (Retd.) with 31+ years experience. Trusted by DRDO, IOCL & Fortune 500 companies. 24/7 security guards, corporate protection, VIP security, event management & facility services.",
+    "Professional security services with military precision. Led by Col. Subhash Sinha (Veteran) with 31+ years experience. Trusted by DRDO, IOCL & Fortune 500 companies. 24/7 security guards, corporate protection, VIP security, event management & facility services.",
   keywords: [
     "security services",
     "security agency",
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     url: "/",
     title: "SS Security Agency | Military-Grade Security Services",
     description:
-      "Professional security services with military precision. Led by Col. Subhash Sinha (Retd.) - 31+ years experience. Trusted by DRDO, IOCL & Fortune 500 companies.",
+      "Professional security services with military precision. Led by Col. Subhash Sinha (Veteran) - 31+ years experience. Trusted by DRDO, IOCL & Fortune 500 companies.",
     siteName: "SS Security Agency",
     images: [
       {
@@ -106,7 +106,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SS Security Agency | Military-Grade Security Services",
     description:
-      "Professional security services with military precision. Led by Col. Subhash Sinha (Retd.) - 31+ years experience.",
+      "Professional security services with military precision. Led by Col. Subhash Sinha (Veteran) - 31+ years experience.",
     images: ["/og-image.jpg"],
   },
   alternates: {
@@ -162,7 +162,7 @@ export default function RootLayout({
                   "@id": "https://sssecurityagency.com/#organization",
                   name: "SS Security Agency",
                   description:
-                    "Professional security services with military precision led by Col. Subhash Sinha (Retd.)",
+                    "Professional security services with military precision led by Col. Subhash Sinha (Veteran)",
                   url: "https://sssecurityagency.com",
                   logo: {
                     "@type": "ImageObject",
@@ -170,7 +170,7 @@ export default function RootLayout({
                   },
                   founder: {
                     "@type": "Person",
-                    name: "Col. Subhash Sinha (Retd.)",
+                    name: "Col. Subhash Sinha (Veteran)",
                     jobTitle: "Founder & CEO",
                     description:
                       "31+ years of military service, Ex-Army officer",

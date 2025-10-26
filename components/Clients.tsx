@@ -36,7 +36,7 @@ const Clients = () => {
     {
       name: "IOCL",
       description: "Indian Oil Corporation Limited",
-      imageSrc: "/security-team.jpg",
+      imageSrc: "/service-industrial-corporate.jpg",
     },
     {
       name: "Government of Karnataka",
@@ -61,9 +61,8 @@ const Clients = () => {
           </div>
 
           {/* Additional Stats Grid with Count-Up Animation */}
-          <div className="pt-12 pb-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto text-center">
+          <div className=" pt-12 pb-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto text-center">
             <StatItem value={2} suffix="+" label="Years Established" />
-            <StatItem value={40} suffix="+" label="Active Clients" />
             <StatItem value={250} suffix="+" label="Team Members" />
             <StatItem value={100} suffix="%" label="Satisfaction" />
           </div>

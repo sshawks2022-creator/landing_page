@@ -27,23 +27,29 @@ const Navigation = () => {
     { label: "Services", href: "#services" },
     { label: "Why Choose Us", href: "#why-choose-us" },
     { label: "Clients", href: "#clients" },
+    { label: "Contact", href: "/contact" },
   ];
 
   const handleNavigation = (href: string) => {
-    if (pathname === "/") {
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("#")) {
+      if (pathname === "/") {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+          setIsMobileMenuOpen(false);
+        }
+      } else {
+        router.push("/");
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        }, 100);
         setIsMobileMenuOpen(false);
       }
     } else {
-      router.push("/");
-      setTimeout(() => {
-        const element = document.querySelector(href);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
+      router.push(href);
       setIsMobileMenuOpen(false);
     }
   };
@@ -95,7 +101,7 @@ const Navigation = () => {
             </button>
           ))}
           <a
-            href="https://calendly.com/sshawks2022/60min"
+            href="https://calendly.com/sssecurityagency-info/30min"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -132,7 +138,7 @@ const Navigation = () => {
               </button>
             ))}
             <a
-              href="https://calendly.com/sshawks2022/60min"
+              href="https://calendly.com/sssecurityagency-info/30min"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}

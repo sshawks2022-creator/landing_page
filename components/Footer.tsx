@@ -5,9 +5,13 @@ import { Instagram, Facebook, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("#")) {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    } else {
+      window.location.href = href;
     }
   };
 
@@ -41,19 +45,28 @@ const Footer = () => {
                 </p>
               </div>
               <div className="pt-6">
-                <h4 className="font-heading font-bold text-lg mb-3">Certifications & Registrations</h4>
+                <h4 className="font-heading font-bold text-lg mb-3">
+                  Certifications & Registrations
+                </h4>
                 <ul className="text-primary-foreground/80 font-body text-sm space-y-1">
                   <li>
-                    <span className="font-semibold">DGR, Ministry of Defence</span> (Regn No. DGR(O)/2079701082022)
+                    <span className="font-semibold">
+                      DGR, Ministry of Defence
+                    </span>{" "}
+                    (Regn No. DGR(O)/2079701082022)
                   </li>
                   <li>
-                    <span className="font-semibold">Government of Karnataka, Department of Labour</span> (Regn. No. 32/79/CE/0036/2022 dt 13/12/2022)
+                    <span className="font-semibold">
+                      Government of Karnataka, Department of Labour
+                    </span>{" "}
+                    (Regn. No. 32/79/CE/0036/2022 dt 13/12/2022)
                   </li>
                   <li>
                     <span className="font-semibold">GST</span>: 29ABIPM1357P1Z0
                   </li>
                   <li>
-                    <span className="font-semibold">PASARA</span>: Ser No. PSA/L/KA/2023/APR/3/553
+                    <span className="font-semibold">PASARA</span>: Ser No.
+                    PSA/L/KA/2023/APR/3/553
                   </li>
                 </ul>
               </div>
@@ -136,7 +149,7 @@ const Footer = () => {
                 © 2025 SS Security Agency. All rights reserved.
               </p>
               <p className="text-primary-foreground/70 font-body text-sm font-semibold">
-                Founded by Col. Subhash Sinha (Retd.)
+                Founded by Col. Subhash Sinha (Veteran)
               </p>
             </div>
           </div>

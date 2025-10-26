@@ -8,6 +8,8 @@ import {
   FileCheck,
   Target,
   CheckCircle,
+  ClipboardCheck,
+  Activity,
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -201,6 +203,64 @@ const WhyChooseUs = () => {
                 </div>
               </div>
             </Card>
+
+            {/* Safety Inspection & Guidance */}
+            <Card className="md:col-span-6 overflow-hidden border-none group animate-fade-in-up hover:shadow-[0_20px_60px_rgba(198,40,40,0.35)] transition-all duration-500">
+              <div className="relative h-full min-h-[280px]">
+                <Image
+                  src="/service-facility-compliance.jpg"
+                  alt="On-site safety survey and risk assessment at client facility"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                <div className="absolute inset-0 p-7 flex flex-col justify-end">
+                  <div className="inline-block p-3 bg-white rounded-2xl w-fit mb-4 group-hover:scale-110 transition-all duration-300">
+                    <ClipboardCheck className="w-7 h-7 text-accent" />
+                  </div>
+                  <span className="inline-block px-3 py-1 bg-white text-accent text-xs font-bold rounded-full mb-3 w-fit">
+                    SAFETY FIRST
+                  </span>
+                  <h3 className="text-2xl font-heading font-bold text-white mb-2">
+                    Safety Inspection & Guidance
+                  </h3>
+                  <p className="text-white/90 text-sm">
+                    Inspections, risk assessments, and on-site guidance with
+                    actionable reports
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            {/* Proactive Actions */}
+            <Card className="md:col-span-6 overflow-hidden border-none group animate-fade-in-up hover:shadow-[0_20px_60px_rgba(10,30,61,0.4)] transition-all duration-500">
+              <div className="relative h-full min-h-[280px]">
+                <Image
+                  src="/security-team.jpg"
+                  alt="Security team taking proactive actions to prevent incidents"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                <div className="absolute inset-0 p-7 flex flex-col justify-end">
+                  <div className="inline-block p-3 bg-accent rounded-2xl w-fit mb-4 group-hover:scale-110 group-hover:shadow-[0_8px_30px_rgba(198,40,40,0.5)] transition-all duration-300">
+                    <Activity className="w-7 h-7 text-white" />
+                  </div>
+                  <span className="inline-block px-3 py-1 bg-accent text-white text-xs font-bold rounded-full mb-3 w-fit">
+                    PREVENTION
+                  </span>
+                  <h3 className="text-2xl font-heading font-bold text-white mb-2">
+                    Proactive Actions
+                  </h3>
+                  <p className="text-white/90 text-sm">
+                    Incident prevention through patrols, early alerts, and SOP
+                    enforcement
+                  </p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </div>
@@ -209,5 +269,3 @@ const WhyChooseUs = () => {
 };
 
 export default WhyChooseUs;
-
-

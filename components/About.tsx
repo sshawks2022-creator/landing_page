@@ -24,9 +24,9 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-slide-in-left">
               <p className="text-lg font-body leading-relaxed text-primary-foreground/90">
-                Founded by a decorated Indian Army veteran, SS Security Agency
-                combines discipline, leadership, and advanced technology to
-                redefine modern security and facility management.
+                Founded by a decorated Indian Army veteran, Subhash Sinha
+                Security Agency combines discipline, leadership, and advanced
+                technology to redefine modern security and facility management.
               </p>
 
               <p className="text-lg font-body leading-relaxed text-primary-foreground/90">
@@ -41,7 +41,7 @@ const About = () => {
                   "Discipline, dedication, and protection — that's our code."
                 </p>
                 <p className="text-sm text-primary-foreground/70 mt-4 font-body">
-                  — Col. Subhash Sinha (Retd.), Founder
+                  — Col. Subhash Sinha (Veteran), Founder
                 </p>
               </div>
             </div>
@@ -53,7 +53,7 @@ const About = () => {
                   <div className="mb-6 overflow-hidden rounded-lg group-hover:shadow-[0_15px_40px_rgba(198,40,40,0.3)] transition-all duration-500 relative h-64">
                     <Image
                       src="/founder-placeholder.jpg"
-                      alt="Col. Subhash Sinha (Retd.) - Founder and decorated Indian Army veteran with 31+ years of military service"
+                      alt="Col. Subhash Sinha (Veteran) - Founder and decorated Indian Army veteran with 31+ years of military service"
                       fill
                       className="object-cover grayscale group-hover:scale-110 group-hover:grayscale-0 transition-all duration-700"
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -96,13 +96,54 @@ const About = () => {
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
                       <p className="text-primary-foreground/90">
-                        Trusted by{" "}
+                        Certified under{" "}
                         <span className="font-semibold">
-                          Government & Fortune 500
-                        </span>{" "}
-                        organizations
+                          DGR, PASARA & Labour Department
+                        </span>
                       </p>
                     </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
+                      <p className="text-primary-foreground/90">
+                        Doctorate in Management (special reference to Disaster
+                        Management)
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
+                      <p className="text-primary-foreground/90">
+                        Masters of Sociology
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
+                      <p className="text-primary-foreground/90">
+                        Masters of Industrial Relations and Personnel Management
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
+                      <p className="text-primary-foreground/90">
+                        Qualified Combat Army Helicopter Pilot
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
+                      <p className="text-primary-foreground/90">
+                        Expertise in Administration, Security and Safety
+                        Management, Training and Personnel Management
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
+                      <p className="text-primary-foreground/90">
+                        Certified under{" "}
+                        <span className="font-semibold">
+                          DGR, PASARA & Labour Department
+                        </span>
+                      </p>
+                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -115,5 +156,3 @@ const About = () => {
 };
 
 export default About;
-
-

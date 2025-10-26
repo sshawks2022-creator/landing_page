@@ -25,12 +25,12 @@ const CTA = () => {
 
             <div className="relative z-10 space-y-8">
               <h2 className="text-4xl md:text-6xl font-heading font-bold text-primary-foreground leading-tight">
-              We secure every <br></br> {" "}
+                We secure every <br></br>{" "}
                 <span className="text-accent">moment that matters</span>
               </h2>
 
               <p className="text-xl md:text-2xl text-primary-foreground/90 font-body max-w-3xl mx-auto">
-              Connect with Us and Take Control of Your Security.
+                Connect with Us and Take Control of Your Security.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -42,19 +42,6 @@ const CTA = () => {
                   Contact us
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <a
-                  href="https://calendly.com/sshawks2022/60min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    size="lg"
-                    variant="secondary"
-                    className="border-accent text-primary font-body font-semibold text-lg px-10 py-7 hover:bg-accent/10"
-                  >
-                    Book an Online Meet
-                  </Button>
-                </a>
               </div>
             </div>
           </div>
@@ -65,5 +52,3 @@ const CTA = () => {
 };
 
 export default CTA;
-
-

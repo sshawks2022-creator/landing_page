@@ -28,7 +28,7 @@ const Contact = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "7acfacb5-1298-4de6-ae0d-4cf49ce05805",
+          access_key: "1a6a1d12-371c-41b9-8178-32af1b9971b9",
           subject: "New Inquiry from SS Security Agency Website",
           name: formData.name,
           email: formData.email,
@@ -230,7 +230,7 @@ const Contact = () => {
                   services we can offer to protect you.
                 </p>
                 <a
-                  href="https://calendly.com/sshawks2022/60min"
+                  href="https://calendly.com/sssecurityagency-info/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

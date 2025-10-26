@@ -73,11 +73,11 @@ const Hero = () => {
             <p>
               Led by{" "}
               <span className="font-semibold text-accent">
-                Col. Subhash Sinha (Retd.)
+                Col. Subhash Sinha (Veteran, Dr.)
               </span>
             </p>
             <p className="mt-2">
-              Trusted by DRDO, IOCL, and top organizations nationwide.
+              Trusted by DRDO, IOCL, and top Govt. organizations.
             </p>
           </div>
 
@@ -88,14 +88,17 @@ const Hero = () => {
               onClick={() => {
                 const element = document.querySelector("#services");
                 if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                  });
                 }
               }}
             >
               Our Services
             </Button>
             <a
-              href="https://calendly.com/sshawks2022/60min"
+              href="https://calendly.com/sssecurityagency-info/30min"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -111,7 +114,7 @@ const Hero = () => {
 
           <div className="pt-12 flex flex-wrap justify-center gap-8 text-sm font-body">
             <StatItem value={31} suffix="+" label="Years Experience" />
-            <StatItem value={40} suffix="+" label="Trusted Clients" />
+
             <StatItem value={250} suffix="+" label="Team Members" />
             <StatItem value={100} suffix="%" label="Compliance" />
           </div>
