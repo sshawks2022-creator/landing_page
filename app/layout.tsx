@@ -169,8 +169,7 @@ export default function RootLayout({
                     "@type": "ImageObject",
                     url: "https://sssecurityagency.in/logo.png",
                   },
-                  image:
-                    "https://sssecurityagency.in/hero-security-leader.jpg",
+                  image: "https://sssecurityagency.in/hero-security-leader.jpg",
                   sameAs: ["https://sssecurityagency.in"],
                   founder: {
                     "@type": "Person",
