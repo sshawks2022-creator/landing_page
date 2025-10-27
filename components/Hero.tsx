@@ -73,7 +73,7 @@ const Hero = () => {
             <p>
               Led by{" "}
               <span className="font-semibold text-accent">
-                Col. Subhash Sinha (Veteran, Dr.)
+                Colonel(Dr) Subhash Sinha, Veteran
               </span>
             </p>
             <p className="mt-2">

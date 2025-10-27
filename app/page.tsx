@@ -11,16 +11,16 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title:
-    "SS Security Agency | Military-Grade Security Services by Col. Subhash Sinha (Veteran)",
+    "SS Security Agency | Military-Grade Security Services by Colonel(Dr) Subhash Sinha, Veteran",
   description:
-    "Professional security services with military precision. Led by Col. Subhash Sinha (Veteran) with 31+ years experience. Trusted by DRDO, IOCL & Fortune 500 companies.",
+    "Professional security services with military precision. Led by Colonel(Dr) Subhash Sinha, Veteran with 31+ years experience. Trusted by DRDO, IOCL & Fortune 500 companies.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "SS Security Agency | Military-Grade Security Services",
     description:
-      "Professional security services with military precision. Led by Col. Subhash Sinha (Veteran) - 31+ years experience.",
+      "Professional security services with military precision. Led by Colonel(Dr) Subhash Sinha, Veteran - 31+ years experience.",
     url: "/",
     images: [
       {

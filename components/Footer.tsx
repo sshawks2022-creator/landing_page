@@ -149,7 +149,7 @@ const Footer = () => {
                 © 2025 SS Security Agency. All rights reserved.
               </p>
               <p className="text-primary-foreground/70 font-body text-sm font-semibold">
-                Founded by Col. Subhash Sinha (Veteran)
+                Founded by Colonel(Dr) Subhash Sinha, Veteran
               </p>
             </div>
           </div>

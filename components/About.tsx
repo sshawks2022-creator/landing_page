@@ -41,7 +41,7 @@ const About = () => {
                   "Discipline, dedication, and protection — that's our code."
                 </p>
                 <p className="text-sm text-primary-foreground/70 mt-4 font-body">
-                  — Col. Subhash Sinha (Veteran), Founder
+                  — Colonel(Dr) Subhash Sinha, Veteran, Founder
                 </p>
               </div>
             </div>
@@ -53,7 +53,7 @@ const About = () => {
                   <div className="mb-6 overflow-hidden rounded-lg group-hover:shadow-[0_15px_40px_rgba(198,40,40,0.3)] transition-all duration-500 relative h-64 md:h-96">
                     <Image
                       src="/img1.webp"
-                      alt="Col. Subhash Sinha (Veteran) - Founder and decorated Indian Army veteran with 31+ years of military service"
+                      alt="Colonel(Dr) Subhash Sinha, Veteran - Founder and decorated Indian Army veteran with 31+ years of military service"
                       fill
                       className="object-cover grayscale md:group-hover:scale-110 md:group-hover:grayscale-0 transition-all duration-700"
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -96,15 +96,6 @@ const About = () => {
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
                       <p className="text-primary-foreground/90">
-                        Certified under{" "}
-                        <span className="font-semibold">
-                          DGR, PASARA & Labour Department
-                        </span>
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-primary-foreground/90">
                         Doctorate in Management (special reference to Disaster
                         Management)
                       </p>
@@ -132,15 +123,6 @@ const About = () => {
                       <p className="text-primary-foreground/90">
                         Expertise in Administration, Security and Safety
                         Management, Training and Personnel Management
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-primary-foreground/90">
-                        Certified under{" "}
-                        <span className="font-semibold">
-                          DGR, PASARA & Labour Department
-                        </span>
                       </p>
                     </div>
                   </div>
