@@ -55,7 +55,7 @@ const Hero = () => {
             {/* Logo - cropped and zoomed for stronger hero presence */}
             <div className="relative overflow-hidden drop-shadow-2xl w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
               <Image
-                src="/logo.svg"
+                src="/logofinal.svg"
                 alt="SS Security Agency Logo"
                 fill
                 className="object-cover scale-110 brightness-0 invert"

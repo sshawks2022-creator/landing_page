@@ -25,7 +25,7 @@ const Footer = () => {
                 {/* Logo - subtle cropped and zoomed for visual emphasis */}
                 <div className="relative w-28 h-28 overflow-hidden">
                   <Image
-                    src="/logo.svg"
+                    src="/logofinal.svg"
                     alt="SS Security Agency Logo"
                     fill
                     className="object-cover scale-110 brightness-0 invert"

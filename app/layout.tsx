@@ -139,9 +139,9 @@ export default function RootLayout({
     >
       <head>
         {/* Favicons - use brand logo */}
-        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+        <link rel="icon" href="/logofinal.svg" type="image/svg+xml" />
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/logofinal.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logofinal.svg" />
 
         {/* Preconnect to important third-party origins */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -167,7 +167,7 @@ export default function RootLayout({
                   url: "https://sssecurityagency.in",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://sssecurityagency.in/logo.png",
+                    url: "https://sssecurityagency.in/logofinal.svg",
                   },
                   image: "https://sssecurityagency.in/hero-security-leader.jpg",
                   sameAs: ["https://sssecurityagency.in"],

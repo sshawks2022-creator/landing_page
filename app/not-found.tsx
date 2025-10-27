@@ -9,7 +9,7 @@ export default function NotFound() {
       <div className="max-w-2xl text-center space-y-8">
         {/* Logo - White version for dark background */}
         <Image
-          src="/logo.svg"
+          src="/logofinal.svg"
           alt="SS Security Agency Logo"
           width={192}
           height={192}
