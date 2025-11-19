@@ -38,7 +38,7 @@ const About = () => {
               <div className="bg-primary/50 border-l-4 border-accent p-6 rounded-r-lg">
                 <Quote className="w-8 h-8 text-accent mb-4" />
                 <p className="text-xl font-body italic text-accent font-medium">
-                  "Discipline, dedication, and protection — that's our code."
+                  "Security, Surveillance and Safety — that's our code."
                 </p>
                 <p className="text-sm text-primary-foreground/70 mt-4 font-body">
                   — Colonel(Dr) Subhash Sinha, Veteran, Founder
@@ -52,12 +52,13 @@ const About = () => {
                 <div className="relative bg-primary p-5 md:p-8 rounded-lg shadow-2xl overflow-hidden group-hover:shadow-[0_25px_60px_rgba(198,40,40,0.4)] transition-all duration-500">
                   <div className="mb-6 overflow-hidden rounded-lg group-hover:shadow-[0_15px_40px_rgba(198,40,40,0.3)] transition-all duration-500 relative h-64 md:h-96">
                     <Image
-                      src="/img1.webp"
+                      src="/ssimg.png"
                       alt="Colonel(Dr) Subhash Sinha, Veteran - Founder and decorated Indian Army veteran with 31+ years of military service"
                       fill
+                      priority
                       className="object-cover grayscale md:group-hover:scale-110 md:group-hover:grayscale-0 transition-all duration-700"
                       sizes="(max-width: 768px) 100vw, 50vw"
-                    />
+                    /> 
                   </div>
                   <h3 className="text-2xl font-heading font-bold mb-4 text-accent">
                     Leadership with Distinction
@@ -66,8 +67,8 @@ const About = () => {
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
                       <p className="text-primary-foreground/90">
-                        <span
-                          ref={yearsRef as any}
+                        <span 
+                          ref={yearsRef as any} 
                           className="font-semibold text-accent"
                         >
                           {yearsCount}+ years

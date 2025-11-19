@@ -36,12 +36,12 @@ const Clients = () => {
     {
       name: "IOCL",
       description: "Indian Oil Corporation Limited",
-      imageSrc: "/iocl-illustration.svg",
+      imageSrc: "/iol.png",
     },
     {
       name: "Government of Karnataka",
       description: "State Government of Karnataka",
-      imageSrc: "/kargov.jpg",
+      imageSrc: "/govt.jpg",
     },
   ];
 
@@ -75,12 +75,16 @@ const Clients = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {client.imageSrc ? (
-                  <div className="relative w-full h-40 mb-4 overflow-hidden rounded-md">
+                  <div className="relative w-full h-40 mb-4 overflow-hidden rounded-md bg-card">
                     <Image
                       src={client.imageSrc}
                       alt={`${client.name} visual`}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      className={
+                        client.imageSrc === "/iol.png"
+                          ? "object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+                          : "object-cover group-hover:scale-105 transition-transform duration-300"
+                      }
                       sizes="(max-width: 768px) 100vw, 33vw"
                       priority={index === 0}
                     />
@@ -102,5 +106,6 @@ const Clients = () => {
     </section>
   );
 };
-
+ 
 export default Clients;
+        

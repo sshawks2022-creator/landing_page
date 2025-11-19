@@ -140,7 +140,12 @@ export default function RootLayout({
       <head>
         {/* Favicons - use brand logo */}
         <link rel="icon" href="/logofinal.svg" type="image/svg+xml" />
-        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/logofinal.svg" />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          sizes="32x32"
+          href="/logofinal.svg"
+        />
         <link rel="apple-touch-icon" sizes="180x180" href="/logofinal.svg" />
 
         {/* Preconnect to important third-party origins */}

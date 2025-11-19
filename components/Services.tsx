@@ -1,90 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Shield,
-  Factory,
-  Clock,
-  Calendar,
-  FileText,
-  UserCheck,
-  Building2,
-} from "lucide-react";
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
+import { servicesData } from "@/lib/services-data";
 
 const Services = () => {
-  const services = [
-    {
-      icon: Shield,
-      title: "Professional Security Guards",
-      description:
-        "Highly trained and certified security personnel providing round-the-clock protection for your premises with professional vigilance and disciplined conduct.",
-      image: "/service-security-guards.jpg",
-    },
-    {
-      icon: Factory,
-      title: "Industrial & Corporate Security Solutions",
-      description:
-        "Comprehensive security infrastructure for industrial facilities and corporate offices, ensuring complete protection of assets, personnel, and operations.",
-      image: "/service-industrial-corporate.jpg",
-    },
-    {
-      icon: Clock,
-      title: "24/7 Monitoring & On-site Support",
-      description:
-        "Continuous surveillance and immediate response capabilities with dedicated monitoring centers and on-ground security teams working around the clock.",
-      image: "/service-monitoring-247.jpg",
-    },
-    {
-      icon: FileText,
-      title: "Electronic Security Systems",
-      description:
-        "Integrated electronic surveillance including CCTV, access control, intrusion alarms, and remote monitoring backed by rapid response.",
-      image: "/service-surveillance.jpg",
-    },
-    {
-      icon: Calendar,
-      title: "Event Security Management",
-      description:
-        "Expert crowd control and security coordination for events of all sizes, ensuring safe and smooth execution with professional event security protocols.",
-      image: "/service-event-security.jpg",
-    },
-    {
-      icon: FileText,
-      title: "Fire Safety & Disaster Management",
-      description:
-        "End-to-end fire safety audits, evacuation planning, mock drills, and disaster response coordination aligned with industry standards.",
-      image: "/service-fire-safety.jpg",
-    },
-    {
-      icon: FileText,
-      title: "Customized Security Plans",
-      description:
-        "Tailored security strategies designed specifically for your unique requirements, combining risk assessment with practical implementation roadmaps.",
-      image: "/service-customized-plans.jpg",
-    },
-    {
-      icon: UserCheck,
-      title: "VIP & Executive Protection",
-      description:
-        "Elite close protection services for high-profile individuals and executives, delivered by specially trained security professionals with military precision.",
-      image: "/service-vip-protection.jpg",
-    },
-    {
-      icon: Building2,
-      title: "Facility Management",
-      description:
-        "Operations support, housekeeping oversight, and on-ground coordination to maintain safe, efficient, and secure facilities.",
-      image: "/service-facility-management.jpg",
-    },
-    {
-      icon: FileText,
-      title: "Compliance Documentation",
-      description:
-        "Government regulations compliance, statutory documentation, and audit readiness with proper record-keeping and verifications.",
-      image: "/compliance-trust.jpg",
-    },
-  ];
 
   return (
     <section id="services" className="bg-primary text-primary-foreground py-24">
@@ -100,33 +21,44 @@ const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => {
+          {servicesData.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card
-                key={index}
-                className="group overflow-hidden border-accent/20 hover:border-accent transition-all duration-300 bg-secondary hover:shadow-[0_0_30px_rgba(198,40,40,0.3)] animate-zoom-in"
-                style={{ animationDelay: `${index * 100}ms` }}
+              <Link
+                key={service.slug}
+                href={`/services/${service.slug}`}
+                className="block h-full"
               >
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent" />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-heading font-bold mb-3 text-primary-foreground group-hover:text-accent transition-colors duration-300">
-                    {service.title}
-                  </h3>
-                  <p className="text-primary-foreground/80 font-body leading-relaxed text-sm">
-                    {service.description}
-                  </p>
-                </CardContent>
-              </Card>
+                <Card
+                  className="group overflow-hidden border-accent/20 hover:border-accent transition-all duration-300 bg-secondary hover:shadow-[0_0_30px_rgba(198,40,40,0.3)] animate-zoom-in h-full cursor-pointer"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent" />
+                  </div>
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Icon className="w-5 h-5 text-accent group-hover:scale-110 transition-transform duration-300" />
+                      <h3 className="text-xl font-heading font-bold text-primary-foreground group-hover:text-accent transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </div>
+                    <p className="text-primary-foreground/80 font-body leading-relaxed text-sm">
+                      {service.shortDescription}
+                    </p>
+                    <p className="text-accent text-sm font-body font-medium mt-4 group-hover:translate-x-2 transition-transform duration-300">
+                      Learn more →
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             );
           })}
         </div>

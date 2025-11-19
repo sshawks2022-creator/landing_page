@@ -76,7 +76,7 @@ const Navigation = () => {
           {/* Logo - 1:1 cropped with subtle zoom for better visibility */}
           <div className="relative w-16 h-16 overflow-hidden">
             <Image
-                              src="/logofinal.svg"
+              src="/logofinal.svg"
               alt="SS Security Agency Logo"
               fill
               className="object-cover scale-110 brightness-0 invert"
