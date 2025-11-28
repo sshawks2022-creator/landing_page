@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
-              Why Choose <span className="text-accent">SS Security</span>
+              Why Choose <span className="text-accent">SSSecurity</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Military precision meets modern security solutions
@@ -237,7 +237,7 @@ const WhyChooseUs = () => {
             <Card className="md:col-span-6 overflow-hidden border-none group animate-fade-in-up hover:shadow-[0_20px_60px_rgba(10,30,61,0.4)] transition-all duration-500">
               <div className="relative h-full min-h-[280px]">
                 <Image
-                  src="/security-team.jpg"
+                  src="/sec-team.png"
                   alt="Security team taking proactive actions to prevent incidents"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"

@@ -45,7 +45,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* SS Security Design System - Military Precision */
+    /* SSSecurity Design System - Military Precision */
     --background: 0 0% 100%;
     --foreground: 210 68% 13%;
 

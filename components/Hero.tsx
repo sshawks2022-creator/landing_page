@@ -38,7 +38,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/hero-security-team-elite.jpg"
+          src="/hero-security-team-elite.png"
           alt="Elite security and military personnel team providing professional security services"
           fill
           priority
@@ -56,7 +56,7 @@ const Hero = () => {
             <div className="relative overflow-hidden drop-shadow-2xl w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
               <Image
                 src="/logofinal.svg"
-                alt="SS Security Agency Logo"
+                alt="SSSecurity Agency Logo"
                 fill
                 className="object-cover scale-110 brightness-0 invert"
                 priority

@@ -26,13 +26,13 @@ const Footer = () => {
                 <div className="relative w-28 h-28 overflow-hidden">
                   <Image
                     src="/logofinal.svg"
-                    alt="SS Security Agency Logo"
+                    alt="SSSecurity Agency Logo"
                     fill
                     className="object-cover scale-110 brightness-0 invert"
                   />
                 </div>
                 <span className="font-heading font-bold text-2xl">
-                  SS Security Agency
+                  SSSecurity Agency
                 </span>
               </div>
               <p className="text-primary-foreground/80 font-body text-base leading-relaxed max-w-md">
@@ -146,7 +146,7 @@ const Footer = () => {
           <div className="border-t border-primary-foreground/20 pt-8 mt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-primary-foreground/60 font-body text-sm">
-                © 2025 SS Security Agency. All rights reserved.
+                © 2025 SSSecurity Agency. All rights reserved.
               </p>
               <p className="text-primary-foreground/70 font-body text-sm font-semibold">
                 Founded by Colonel(Dr) Subhash Sinha, Veteran

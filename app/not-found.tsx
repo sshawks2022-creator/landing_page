@@ -10,7 +10,7 @@ export default function NotFound() {
         {/* Logo - White version for dark background */}
         <Image
           src="/logofinal.svg"
-          alt="SS Security Agency Logo"
+          alt="SSSecurity Agency Logo"
           width={192}
           height={192}
           className="brightness-0 invert drop-shadow-2xl w-40 h-40 md:w-48 md:h-48 mx-auto"

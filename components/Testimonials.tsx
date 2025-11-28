@@ -14,28 +14,28 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote:
-        "SS Security Agency has been instrumental in securing our facilities. Their professional approach and military-grade expertise give us complete peace of mind.",
+        "SSSecurity Agency has been instrumental in securing our facilities. Their professional approach and military-grade expertise give us complete peace of mind.",
       author: "Rajesh Kumar",
       position: "Security Head, DRDO",
       rating: 5,
     },
     {
       quote:
-        "The level of professionalism and dedication shown by the SS Security team is unmatched. They've transformed our security infrastructure completely.",
+        "The level of professionalism and dedication shown by the SSSecurity team is unmatched. They've transformed our security infrastructure completely.",
       author: "Priya Sharma",
       position: "Facility Manager, IOCL",
       rating: 5,
     },
     {
       quote:
-        "Working with SS Security has been a game-changer. Their veteran-led approach brings discipline and reliability that we can always count on.",
+        "Working with SSSecurity has been a game-changer. Their veteran-led approach brings discipline and reliability that we can always count on.",
       author: "Amit Patel",
       position: "Operations Director, Karnataka Govt",
       rating: 5,
     },
     {
       quote:
-        "Outstanding service and commitment to excellence. SS Security Agency sets the standard for what professional security should look like.",
+        "Outstanding service and commitment to excellence. SSSecurity Agency sets the standard for what professional security should look like.",
       author: "Sanjay Reddy",
       position: "Chief Security Officer",
       rating: 5,

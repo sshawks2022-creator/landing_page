@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   ),
   title: {
     default:
-      "SS Security Agency | Military-Grade Security Services by Colonel(Dr) Subhash Sinha, Veteran",
-    template: "%s | SS Security Agency",
+      "SSSecurity Agency | Military-Grade Security Services by Colonel(Dr) Subhash Sinha, Veteran",
+    template: "%s | SSSecurity Agency",
   },
   description:
     "Professional security services with military precision. Led by Colonel(Dr) Subhash Sinha, Veteran with 31+ years experience. Trusted by DRDO, IOCL & Fortune 500 companies. 24/7 security guards, corporate protection, VIP security, event management & facility services.",
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     "fire safety",
     "surveillance services",
   ],
-  authors: [{ name: "SS Security Agency" }],
-  creator: "SS Security Agency",
-  publisher: "SS Security Agency",
+  authors: [{ name: "SSSecurity Agency" }],
+  creator: "SSSecurity Agency",
+  publisher: "SSSecurity Agency",
   formatDetection: {
     email: true,
     address: true,
@@ -89,22 +89,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "/",
-    title: "SS Security Agency | Military-Grade Security Services",
+    title: "SSSecurity Agency | Military-Grade Security Services",
     description:
       "Professional security services with military precision. Led by Colonel(Dr) Subhash Sinha, Veteran - 31+ years experience. Trusted by DRDO, IOCL & Fortune 500 companies.",
-    siteName: "SS Security Agency",
+    siteName: "SSSecurity Agency",
     images: [
       {
         url: "/hero-security-leader.jpg",
         width: 1200,
         height: 630,
-        alt: "SS Security Agency - Professional Security Services",
+        alt: "SSSecurity Agency - Professional Security Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SS Security Agency | Military-Grade Security Services",
+    title: "SSSecurity Agency | Military-Grade Security Services",
     description:
       "Professional security services with military precision. Led by Colonel(Dr) Subhash Sinha, Veteran - 31+ years experience.",
     images: ["/hero-security-leader.jpg"],
@@ -166,7 +166,7 @@ export default function RootLayout({
                 {
                   "@type": "SecurityCompany",
                   "@id": "https://sssecurityagency.in/#organization",
-                  name: "SS Security Agency",
+                  name: "SSSecurity Agency",
                   description:
                     "Professional security services with military precision led by Colonel(Dr) Subhash Sinha, Veteran",
                   url: "https://sssecurityagency.in",
@@ -299,7 +299,7 @@ export default function RootLayout({
                   "@type": "WebSite",
                   "@id": "https://sssecurityagency.in/#website",
                   url: "https://sssecurityagency.in",
-                  name: "SS Security Agency",
+                  name: "SSSecurity Agency",
                   description: "Professional Security Services",
                   publisher: {
                     "@id": "https://sssecurityagency.in/#organization",
@@ -318,7 +318,7 @@ export default function RootLayout({
                   "@type": "WebPage",
                   "@id": "https://sssecurityagency.in/#webpage",
                   url: "https://sssecurityagency.in",
-                  name: "SS Security Agency | Military-Grade Security Services",
+                  name: "SSSecurity Agency | Military-Grade Security Services",
                   isPartOf: {
                     "@id": "https://sssecurityagency.in/#website",
                   },

@@ -87,7 +87,7 @@ openGraph: {
 
 ```tsx
 <Image
-  src="/hero-security-team-elite.jpg"
+  src="/hero-security-team-elite.png"
   alt="Elite security and military personnel team providing professional security services"
   fill
   priority

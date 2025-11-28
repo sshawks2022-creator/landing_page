@@ -77,14 +77,14 @@ const Navigation = () => {
           <div className="relative w-16 h-16 overflow-hidden">
             <Image
               src="/logofinal.svg"
-              alt="SS Security Agency Logo"
+              alt="SSSecurity Agency Logo"
               fill
               className="object-cover scale-110 brightness-0 invert"
               priority
             />
           </div>
           <span className="font-heading font-bold text-primary-foreground text-xl hidden sm:block">
-            SS Security Agency
+            SSSecurity Agency
           </span>
         </button>
 

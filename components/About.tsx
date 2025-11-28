@@ -16,7 +16,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              About <span className="text-accent">SS Security Agency</span>
+              About <span className="text-accent">SSSecurity Agency</span>
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto" />
           </div>

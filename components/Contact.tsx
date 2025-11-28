@@ -29,12 +29,12 @@ const Contact = () => {
         },
         body: JSON.stringify({
           access_key: "1a6a1d12-371c-41b9-8178-32af1b9971b9",
-          subject: "New Inquiry from SS Security Agency Website",
+          subject: "New Inquiry from SSSecurity Agency Website",
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          from_name: "SS Security Agency Website",
+          from_name: "SSSecurity Agency Website",
         }),
       });
 

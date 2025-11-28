@@ -30,7 +30,7 @@ export const servicesData: ServiceDetail[] = [
       "Highly trained and certified security personnel providing round-the-clock protection for your premises with professional vigilance and disciplined conduct.",
     description:
       "Our professional security guards are the backbone of your security infrastructure. Trained with military precision and certified under DGR, PASARA, and Labour Department regulations, our security personnel bring unmatched discipline, vigilance, and professionalism to protect your assets, personnel, and operations 24/7.",
-    image: "/service-security-guards.jpg",
+    image: "/service-security-guards.png",
     features: [
       "DGR, PASARA & Labour Department certified personnel",
       "Background verified and trained security professionals",

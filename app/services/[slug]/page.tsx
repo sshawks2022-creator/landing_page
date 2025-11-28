@@ -24,18 +24,18 @@ export async function generateMetadata({
 
   if (!service) {
     return {
-      title: "Service Not Found | SS Security Agency",
+      title: "Service Not Found | SSSecurity Agency",
     };
   }
 
   return {
-    title: `${service.title} | SS Security Agency`,
+    title: `${service.title} | SSSecurity Agency`,
     description: service.shortDescription,
     alternates: {
       canonical: `/services/${service.slug}`,
     },
     openGraph: {
-      title: `${service.title} | SS Security Agency`,
+      title: `${service.title} | SSSecurity Agency`,
       description: service.shortDescription,
       url: `/services/${service.slug}`,
       images: [

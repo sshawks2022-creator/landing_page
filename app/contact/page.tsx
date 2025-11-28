@@ -6,12 +6,12 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Contact Us | Request Security Services",
   description:
-    "Contact SS Security Agency for professional security services. Available 24/7 for emergency response and security consultations. Led by Colonel(Dr) Subhash Sinha, Veteran.",
+    "Contact SSSecurity Agency for professional security services. Available 24/7 for emergency response and security consultations. Led by Colonel(Dr) Subhash Sinha, Veteran.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Contact SS Security Agency | Request Security Services",
+    title: "Contact SSSecurity Agency | Request Security Services",
     description:
       "Get in touch with our team for professional security solutions. 24/7 emergency response available.",
     url: "/contact",
