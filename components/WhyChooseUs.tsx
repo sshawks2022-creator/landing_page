@@ -208,7 +208,7 @@ const WhyChooseUs = () => {
             <Card className="md:col-span-6 overflow-hidden border-none group animate-fade-in-up hover:shadow-[0_20px_60px_rgba(198,40,40,0.35)] transition-all duration-500">
               <div className="relative h-full min-h-[280px]">
                 <Image
-                  src="/service-facility-compliance.jpg"
+                  src="/service-facility-compliance.png"
                   alt="On-site safety survey and risk assessment at client facility"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
